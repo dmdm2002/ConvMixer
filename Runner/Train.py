@@ -72,7 +72,6 @@ class Trainer(Param):
                 self.tr_disp.record([loss, acc])
 
                 optimizer.zero_grad()
-                loss.backward()
                 optimizer.step()
 
             model.eval()
